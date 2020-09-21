@@ -3,6 +3,8 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.halitoz.halitozecommerce.MainActivity">
 
+    <group android:checkableBehavior="single">
+
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           android:orderInCategory="100"
@@ -38,4 +40,7 @@
           android:orderInCategory="100"
           android:icon="@drawable/ic_monetization_on_black_24dp"
           app:showAsAction="never"/>
+
+    </group>
+
 </menu>
