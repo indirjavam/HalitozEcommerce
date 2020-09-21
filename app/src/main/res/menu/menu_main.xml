@@ -2,8 +2,40 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.halitoz.halitozecommerce.MainActivity">
+
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+
+      <item android:id="@+id/action_settings2"
+          android:title="Jeans"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+
+      <item android:id="@+id/action_settings3"
+          android:title="Shorts"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+
+      <item android:id="@+id/action_settings4"
+          android:title="Socks"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_search_black_24dp"
+          app:showAsAction="never"/>
+
+      <item android:id="@+id/action_settings5"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+
+      <item android:id="@+id/action_settings6"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
           app:showAsAction="never"/>
 </menu>
