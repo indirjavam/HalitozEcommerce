@@ -3,4 +3,5 @@
     <string name="action_settings">Home</string>
     <string name="product_deail">Product Deail</string>
     <string name="availability">See if it\'s available</string>
+    <string name="actionHome">actionHome</string>
 </resources>

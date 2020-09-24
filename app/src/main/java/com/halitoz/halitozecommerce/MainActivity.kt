@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.util.Log.d
 import android.view.MenuItem
+import com.halitoz.halitozecommerce.model.JeansFragment
 import com.halitoz.halitozecommerce.model.Product
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -18,11 +19,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+
         navigationView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.actionHome-> d("daniel","Going Home!")
-                R.id.actionDon-> d("daniel","Don!")
-                R.id.actionKot-> d("daniel","Kot!")
+                R.id.actionJeans-> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout,JeansFragment())
+                        .commit()
+                    d("daniel","Jeans!")
+
+                }
+                R.id.actionShorts-> d("daniel","Shorts!")
             }
             it.isChecked = true
             drawerLayout.closeDrawers()
