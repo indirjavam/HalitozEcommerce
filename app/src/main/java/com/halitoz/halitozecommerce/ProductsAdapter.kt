@@ -20,25 +20,18 @@ class ProductsAdapter(private val products: List<Product>) : RecyclerView.Adapte
 //        holder.title2.text = products[position].title2
     }
 
-/*    override fun onBindViewHolder(holder: ProductsAdapter.ViewHolder, position: Int) {
-        Picasso.get().load(products[position].photoUrl).into(holder.image)
-        holder.title.text = products[position].title
-        holder.price.text = products[position].price.toString()
-//        holder.title2.text = products[position].title2
-    }*/
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductsAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.product_row,parent,false)
         val holder = ViewHolder(view)
         view.setOnClickListener(){
             val intent = Intent(parent.context, ProductDetail::class.java)
             intent.putExtra("title",products[holder.adapterPosition].title)
+            intent.putExtra("photo_url",products[holder.adapterPosition].photoUrl)
             parent.context.startActivity(intent)
 
         }
         return holder
     }
-
 
     override fun getItemCount() = products.size
 

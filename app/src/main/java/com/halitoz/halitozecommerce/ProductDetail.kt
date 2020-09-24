@@ -3,6 +3,7 @@ package com.halitoz.halitozecommerce
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.product_detail.*
 
 class ProductDetail : AppCompatActivity() {
@@ -12,7 +13,9 @@ class ProductDetail : AppCompatActivity() {
         setContentView(R.layout.product_detail)
 
         val title = intent.getStringExtra("title")
+        val photoUrl = intent.getStringExtra("photo_url")
         product_name.text = title
+        Picasso.get().load(photoUrl).into(photo)
 
         availability.setOnClickListener {
             AlertDialog.Builder(this)

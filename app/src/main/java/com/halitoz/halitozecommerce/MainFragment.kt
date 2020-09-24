@@ -38,6 +38,7 @@ class MainFragment : Fragment(){
                     //            layoutManager = LinearLayoutManager(this@MainActivity)
                     layoutManager = GridLayoutManager(activity,2)
                     adapter = ProductsAdapter(products)
+                    root.progressBar.visibility = View.GONE
                 }
             }
         }
