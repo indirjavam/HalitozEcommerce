@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
+import android.util.Log.d
 import android.view.MenuItem
 import com.halitoz.halitozecommerce.model.Product
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,11 +19,16 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.actionHome-> d("daniel","Going Home!")
+                R.id.actionDon-> d("daniel","Don!")
+                R.id.actionKot-> d("daniel","Kot!")
+            }
             it.isChecked = true
             drawerLayout.closeDrawers()
                 true
         }
-
+// Aloooo alooo
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp)

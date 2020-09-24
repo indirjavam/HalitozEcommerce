@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
 
-    <item android:id="@+id/action_settings"
+    <item android:id="@+id/actionHome"
           android:title="@string/action_settings"
           android:orderInCategory="100"
           android:icon="@drawable/ic_monetization_on_black_24dp"
@@ -17,13 +17,13 @@
           android:icon="@drawable/ic_monetization_on_black_24dp"
           app:showAsAction="never"/>
 
-      <item android:id="@+id/action_settings3"
+      <item android:id="@+id/actionKot"
           android:title="Shorts"
           android:orderInCategory="100"
           android:icon="@drawable/ic_monetization_on_black_24dp"
           app:showAsAction="never"/>
 
-      <item android:id="@+id/action_settings4"
+      <item android:id="@+id/actionDon"
           android:title="Socks"
           android:orderInCategory="100"
           android:icon="@drawable/ic_search_black_24dp"
