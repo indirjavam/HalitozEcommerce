@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Halitoz\'sEcommerce</string>
-    <string name="action_settings">Home</string>
+    <string name="action_settings">setting</string>
     <string name="product_deail">Product Deail</string>
     <string name="availability">See if it\'s available</string>
-    <string name="actionHome">actionHome</string>
+    <string name="actionHome">Home</string>
 </resources>
